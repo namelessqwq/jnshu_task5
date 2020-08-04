@@ -1,0 +1,226 @@
+html {
+  height: 100%;
+}
+
+/* header部分 */
+.header {
+  height: 60px;
+  line-height: 60px;
+  background-color: #5fc0cd;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.back {
+  float: left;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.back a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.home-page {
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%);
+}
+
+
+
+.header-fixed {
+  height: 60px;
+}
+
+/* footer部分 */
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 10vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.bbs button,.tel button{
+  margin-bottom: 10px;
+  width: 44%;
+  border-radius: 10px;
+  border: 2px solid #5fc0cd;
+  height: 8vh;
+  background-color: #5fc0cd;
+  color: #fff;
+}
+
+.bbs button {
+  float: left;
+  margin-left: 4%;
+  background-color: #fff;
+  color: #5fc0cd;
+}
+
+.tel button {
+  float: right;
+  margin-right: 5%;
+}
+
+.footer-fixed {
+  height: 10vh;
+  overflow: hidden;
+  bottom: 0;
+}
+
+/* main部分 */
+.main {
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.personal-information {
+  width: 100%;
+  height: 30vh;
+  background: url(../img/background.png);
+  filter: blur(5px) brightness(70%);
+  background-size: 84%;
+  transform: scale(1.2)
+}
+
+.profile {
+  background: url(../img/profile.png) no-repeat;
+  background-size: 100%;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  position: absolute;
+  top: 15vh;
+  left: 25px;
+  transform: translateY(-50%);
+}
+
+.info {
+  position: absolute;
+  top: 15vh;
+  left: 140px;
+  font-size: 16px;
+  transform: translateY(-50%);
+  line-height: 40px;
+  color: #fff;
+}
+
+.address {
+  position: relative;
+}
+
+.address .icon {
+  position: absolute;
+  background: url(../img/address_icon.png) no-repeat;
+  background-size: 100%;
+  width: 18px; 
+  height: 23px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 技能部分 */
+.skill {
+  position: relative;
+  height: 80px;
+}
+
+.skill .text {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.data {
+  position: relative;
+}
+
+.data > div {
+  height: 80px;
+  font-size: 20px;
+  line-height: 80px;
+  border-top: 1px solid #e1e5e7;
+}
+
+.data > div > div {
+  float: left;
+  margin-left: 30px;
+}
+
+.skill > .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 16px;
+  background-color: #5fc0cd;
+  margin-left: 0;
+}
+
+.tag > div > div {
+  float: left;
+}
+.tag  .icon {
+  width: 24px;
+  height: 23px;
+  background: url(../img/star.png) no-repeat;
+  margin-right: 10px;
+  margin-top: 29px;
+}
+
+.data > .fixed {
+  position: absolute;
+  width: 30px;
+  height: 350px;
+  top: 100px;
+  border: none;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.data > div:nth-last-child(2) {
+  border-bottom: 1px solid #e1e5e7;
+}
+
+
+
+.data > div:nth-child(n+2) > div:nth-child(1):after {
+  content: "";
+  width: 1px;
+  height: 16px;
+  border: 1px solid #e1e5e7;
+  margin-left: 20px;
+}
+
+.red {
+  color: red;
+}
+
+.data .introduce {
+  display: flex;
+  height: auto;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.data .introduce > div:nth-child(1) {
+  flex-wrap: nowrap;
+  float: none;
+  flex-shrink:0
+}
+
+
+.data .introduce > div:nth-child(2) {
+  flex-wrap: wrap;
+  line-height: 60px;
+}
+
+
